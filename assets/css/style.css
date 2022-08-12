@@ -127,12 +127,18 @@ a {
 
 .footer {
   background-color: #6667ab;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0 40px;
   text-align: center;
   background-color: #6667ab;
@@ -143,6 +149,10 @@ a {
 .footer-img {
   width: 20px;
   height: 20px;
+}
+
+.footer a {
+  font-size: 10px;
 }
 
 .footer a:hover {
